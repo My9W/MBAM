@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#B0B0B0</color>
+    <color name="light_gray">#383838</color>
+    <color name="dark_gray">#121212</color>
+    <color name="purple">#BB86FC</color>
+    <color name="purple_dark">#3700B3</color>
+    <color name="red">#CF6679</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="lavender">#B39DDB</color>
+
+    <!-- Fix missing colors for both themes -->
+    <color name="colorBackground">#121212</color> <!-- Dark Mode: Dark Background -->
+    <color name="colorText">#FFFFFF</color> <!-- Dark Mode: White Text -->
+</resources>
