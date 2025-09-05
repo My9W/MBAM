@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:elevation="4dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bukti Pembayaran"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:textColor="#000000" />
+
+        <!-- Customer Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informasi Pelanggan"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingBottom="4dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvNoteUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama: John Doe"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvNoteNIK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIK: 1234567890123456"
+            android:paddingBottom="12dp"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Meter Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informasi Meter"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingBottom="4dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvNoteOldReading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meter Lama: 1234"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvNoteNewReading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meter Baru: 1256"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvNoteUsage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penggunaan: 22 m³"
+            android:paddingBottom="12dp"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Payment Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informasi Pembayaran"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingBottom="4dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvNoteTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Bayar: Rp 55.000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvNotePaymentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Pembayaran: 2025-07-07"
+            android:paddingTop="8dp"
+            android:textSize="13sp"
+            android:textColor="#000000" />
+
+        <!-- Footer Note -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harap simpan bukti ini sebagai arsip Anda."
+            android:textSize="12sp"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/tvPaymentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Payment "
+        android:textColor="@color/colorText"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informasi User : "
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/imageIv"
+        android:layout_width="371dp"
+        android:layout_height="134dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="Selected Image"
+        android:scaleType="centerInside" />
+
+    <Button
+        android:id="@+id/btnTakeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ambil Gambar" />
+
+    <Button
+        android:id="@+id/btnRecognizeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deteksi Meteran"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvRecognizedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil Deteksi : "
+        android:textColor="@color/colorText"
+        android:layout_marginTop="16dp" />
+    <EditText
+        android:id="@+id/etPricePerUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Harga per m³"
+        android:inputType="number"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Harga: Rp 0"
+        android:textColor="@color/colorText"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnUpdateMeterReading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Meteran"
+        android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/btnCalculatePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung Harga"
+        android:layout_marginTop="16dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutClientRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/ivAppLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="App Logo"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Information"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvClientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvClientNik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NIK: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvClientAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvClientUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Penggunaan Bulan Ini: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvClientMeter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meter Saat Ini: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvClientLastPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terakhir Pembayaran: "
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorText"
+        android:layout_marginBottom="8dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Riwayat Pembayaran"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvClientHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorText"
+        android:layout_marginBottom="8dp" />
+</LinearLayout>
